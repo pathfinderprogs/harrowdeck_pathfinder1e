@@ -2,12 +2,6 @@ import csv
 from bisect import bisect_left
 import numpy as np
 
-def get_item(cdf, options):
-    roll = np.random.random()
-    idx = bisect_left(cdf, roll)
-    
-    return options[idx]
-
 class RollTable:
 
     def __init__(self, options: np.array, weights: np.array) -> "RollTable":

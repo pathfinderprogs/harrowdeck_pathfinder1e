@@ -1,4 +1,5 @@
 import PySimpleGUI as sg
+from classRollTable import RollTable
 
 layout = [[sg.Text("Hello")], [sg.Button("OK")]]
 
