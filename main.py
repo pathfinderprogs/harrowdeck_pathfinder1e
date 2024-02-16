@@ -1,5 +1,4 @@
 import csv
-from bisect import bisect_left
 import numpy as np
 from classRollTable import RollTable
 
@@ -19,7 +18,7 @@ table_harrow = RollTable(cards, weights)
 def draw_a_card():
     for _ in range(1):
         result = table_harrow.get_item()
-        print(result)
+        return result
         
-draw_a_card()
+print(draw_a_card())
 
