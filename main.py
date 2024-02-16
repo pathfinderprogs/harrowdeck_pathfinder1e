@@ -16,6 +16,10 @@ cards = np.array(c)
 weights = np.array(w, dtype=float)
 table_harrow = RollTable(cards, weights)
 
-for _ in range(1):
-    print(table_harrow.get_item())
+def draw_a_card():
+    for _ in range(1):
+        result = table_harrow.get_item()
+        print(result)
+        
+draw_a_card()
 
