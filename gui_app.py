@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-from main import draw_a_card
+from draw_a_card import draw_a_card
 
 layout = [[sg.Text("Hello")], [sg.Button("OK")], [sg.Button("Draw a card...")]]
 
